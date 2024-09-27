@@ -14,6 +14,8 @@ public class BasicController {
     @Autowired
     private PersonService personService;
 
+    // Endpunkt
+
     @GetMapping("/all")
     public List<Person> getAll() { 
         return personService.findAll();

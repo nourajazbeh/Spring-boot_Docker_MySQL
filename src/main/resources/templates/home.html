@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Startseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #003366;
+            font-size: 36px;
+        }
+        a {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        a:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Willkommen, <span th:text="${user.username}"></span>!</h1>
+    <a href="/logout">Logout</a>
+</body>
+</html>
